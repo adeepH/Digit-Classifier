@@ -18,3 +18,4 @@ We create a folder containing the `data.js` , `script.js`, `mnist.html`.
 - Launch the web URL (http://127.0.0.1:8887) and wait for the model to train.
 - After completing the training you get an alert/pop-up message , test the model.
 - [canvas](https://www.w3schools.com/html/html5_canvas.asp) is used.
+
