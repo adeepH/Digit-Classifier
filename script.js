@@ -4,7 +4,7 @@ var pos = {x:0, y:0};
 var rawImage;
 var model;
 	
-function getModel() {
+function StarterModel() {
 	model = tf.sequential();
 
 	model.add(tf.layers.conv2d({inputShape: [28, 28, 1], kernelSize: 3, filters: 8, activation: 'relu'}));
@@ -108,7 +108,7 @@ function init() {
 async function run() {  
 	const data = new MnistData();
 	await data.load();
-	const model = getModel();
+	const model = StarterModel();
 	tfvis.show.modelSummary({name: 'Model Architecture'}, model);
 	await train(model, data);
 	init();
